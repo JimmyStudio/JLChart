@@ -13,6 +13,13 @@
 		BF8C822F1DF6006C00C9A0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C822D1DF6006C00C9A0DA /* Main.storyboard */; };
 		BF8C82311DF6006C00C9A0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8C82301DF6006C00C9A0DA /* Assets.xcassets */; };
 		BF8C82341DF6006C00C9A0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C82321DF6006C00C9A0DA /* LaunchScreen.storyboard */; };
+		BF8C824B1DF6016100C9A0DA /* JLBaseChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C823D1DF6016100C9A0DA /* JLBaseChart.m */; };
+		BF8C824C1DF6016100C9A0DA /* JLBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C823F1DF6016100C9A0DA /* JLBubble.m */; };
+		BF8C824D1DF6016100C9A0DA /* JLChartPointItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C82421DF6016100C9A0DA /* JLChartPointItem.m */; };
+		BF8C824E1DF6016100C9A0DA /* JLChartPointSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C82441DF6016100C9A0DA /* JLChartPointSet.m */; };
+		BF8C824F1DF6016100C9A0DA /* JLLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C82461DF6016100C9A0DA /* JLLineChart.m */; };
+		BF8C82501DF6016100C9A0DA /* JLLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C82481DF6016100C9A0DA /* JLLineChartData.m */; };
+		BF8C82511DF6016100C9A0DA /* JLSingleLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C824A1DF6016100C9A0DA /* JLSingleLineChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,22 @@
 		BF8C82301DF6006C00C9A0DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8C82331DF6006C00C9A0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8C82351DF6006C00C9A0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8C823C1DF6016100C9A0DA /* JLBaseChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBaseChart.h; sourceTree = "<group>"; };
+		BF8C823D1DF6016100C9A0DA /* JLBaseChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBaseChart.m; sourceTree = "<group>"; };
+		BF8C823E1DF6016100C9A0DA /* JLBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBubble.h; sourceTree = "<group>"; };
+		BF8C823F1DF6016100C9A0DA /* JLBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBubble.m; sourceTree = "<group>"; };
+		BF8C82401DF6016100C9A0DA /* JLChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChartDelegate.h; sourceTree = "<group>"; };
+		BF8C82411DF6016100C9A0DA /* JLChartPointItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChartPointItem.h; sourceTree = "<group>"; };
+		BF8C82421DF6016100C9A0DA /* JLChartPointItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChartPointItem.m; sourceTree = "<group>"; };
+		BF8C82431DF6016100C9A0DA /* JLChartPointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChartPointSet.h; sourceTree = "<group>"; };
+		BF8C82441DF6016100C9A0DA /* JLChartPointSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLChartPointSet.m; sourceTree = "<group>"; };
+		BF8C82451DF6016100C9A0DA /* JLLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLLineChart.h; sourceTree = "<group>"; };
+		BF8C82461DF6016100C9A0DA /* JLLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLLineChart.m; sourceTree = "<group>"; };
+		BF8C82471DF6016100C9A0DA /* JLLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLLineChartData.h; sourceTree = "<group>"; };
+		BF8C82481DF6016100C9A0DA /* JLLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLLineChartData.m; sourceTree = "<group>"; };
+		BF8C82491DF6016100C9A0DA /* JLSingleLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSingleLineChart.h; sourceTree = "<group>"; };
+		BF8C824A1DF6016100C9A0DA /* JLSingleLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSingleLineChart.m; sourceTree = "<group>"; };
+		BF8C82531DF6028E00C9A0DA /* JLChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLChart.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 		BF8C82231DF6006C00C9A0DA /* JLChartDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF8C823B1DF6013C00C9A0DA /* Chart */,
 				BF8C82271DF6006C00C9A0DA /* AppDelegate.h */,
 				BF8C82281DF6006C00C9A0DA /* AppDelegate.m */,
 				BF8C822A1DF6006C00C9A0DA /* ViewController.h */,
@@ -77,6 +101,29 @@
 				BF8C82251DF6006C00C9A0DA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8C823B1DF6013C00C9A0DA /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C823C1DF6016100C9A0DA /* JLBaseChart.h */,
+				BF8C823D1DF6016100C9A0DA /* JLBaseChart.m */,
+				BF8C823E1DF6016100C9A0DA /* JLBubble.h */,
+				BF8C823F1DF6016100C9A0DA /* JLBubble.m */,
+				BF8C82401DF6016100C9A0DA /* JLChartDelegate.h */,
+				BF8C82411DF6016100C9A0DA /* JLChartPointItem.h */,
+				BF8C82421DF6016100C9A0DA /* JLChartPointItem.m */,
+				BF8C82431DF6016100C9A0DA /* JLChartPointSet.h */,
+				BF8C82441DF6016100C9A0DA /* JLChartPointSet.m */,
+				BF8C82451DF6016100C9A0DA /* JLLineChart.h */,
+				BF8C82461DF6016100C9A0DA /* JLLineChart.m */,
+				BF8C82471DF6016100C9A0DA /* JLLineChartData.h */,
+				BF8C82481DF6016100C9A0DA /* JLLineChartData.m */,
+				BF8C82491DF6016100C9A0DA /* JLSingleLineChart.h */,
+				BF8C824A1DF6016100C9A0DA /* JLSingleLineChart.m */,
+				BF8C82531DF6028E00C9A0DA /* JLChart.h */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8C824F1DF6016100C9A0DA /* JLLineChart.m in Sources */,
 				BF8C822C1DF6006C00C9A0DA /* ViewController.m in Sources */,
+				BF8C82501DF6016100C9A0DA /* JLLineChartData.m in Sources */,
 				BF8C82291DF6006C00C9A0DA /* AppDelegate.m in Sources */,
+				BF8C824D1DF6016100C9A0DA /* JLChartPointItem.m in Sources */,
+				BF8C824C1DF6016100C9A0DA /* JLBubble.m in Sources */,
+				BF8C82511DF6016100C9A0DA /* JLSingleLineChart.m in Sources */,
 				BF8C82261DF6006C00C9A0DA /* main.m in Sources */,
+				BF8C824E1DF6016100C9A0DA /* JLChartPointSet.m in Sources */,
+				BF8C824B1DF6016100C9A0DA /* JLBaseChart.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
