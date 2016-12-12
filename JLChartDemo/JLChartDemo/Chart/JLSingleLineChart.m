@@ -85,6 +85,8 @@
                     [fillPath addLineToPoint:point];
                 }else if(i == set.items.count -1){
                     [self.bubble showWithPoint:point Content:item.rawY];
+                    [self bringSubviewToFront:_bubble];
+                    
                     [linePath addLineToPoint:point];
                     [fillPath addLineToPoint:point];
                     [fillPath addLineToPoint:CGPointMake(item.x, self.bounds.size.height - self.chartMarginBottom)];
