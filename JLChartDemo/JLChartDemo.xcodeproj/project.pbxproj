@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF75C4191E06EE4300CCCD0B /* JLPieChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = BF75C4181E06EE4300CCCD0B /* JLPieChartData.m */; };
+		BF75C41C1E06EE6C00CCCD0B /* JLPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BF75C41B1E06EE6C00CCCD0B /* JLPieChart.m */; };
 		BF8C82261DF6006C00C9A0DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C82251DF6006C00C9A0DA /* main.m */; };
 		BF8C82291DF6006C00C9A0DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C82281DF6006C00C9A0DA /* AppDelegate.m */; };
 		BF8C822C1DF6006C00C9A0DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C822B1DF6006C00C9A0DA /* ViewController.m */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF75C4171E06EE4300CCCD0B /* JLPieChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPieChartData.h; sourceTree = "<group>"; };
+		BF75C4181E06EE4300CCCD0B /* JLPieChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPieChartData.m; sourceTree = "<group>"; };
+		BF75C41A1E06EE6C00CCCD0B /* JLPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLPieChart.h; sourceTree = "<group>"; };
+		BF75C41B1E06EE6C00CCCD0B /* JLPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLPieChart.m; sourceTree = "<group>"; };
 		BF8C82211DF6006C00C9A0DA /* JLChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8C82251DF6006C00C9A0DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF8C82271DF6006C00C9A0DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +128,10 @@
 				BF8C82491DF6016100C9A0DA /* JLSingleLineChart.h */,
 				BF8C824A1DF6016100C9A0DA /* JLSingleLineChart.m */,
 				BF8C82531DF6028E00C9A0DA /* JLChart.h */,
+				BF75C4171E06EE4300CCCD0B /* JLPieChartData.h */,
+				BF75C4181E06EE4300CCCD0B /* JLPieChartData.m */,
+				BF75C41A1E06EE6C00CCCD0B /* JLPieChart.h */,
+				BF75C41B1E06EE6C00CCCD0B /* JLPieChart.m */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -199,12 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8C824F1DF6016100C9A0DA /* JLLineChart.m in Sources */,
+				BF75C41C1E06EE6C00CCCD0B /* JLPieChart.m in Sources */,
 				BF8C822C1DF6006C00C9A0DA /* ViewController.m in Sources */,
 				BF8C82501DF6016100C9A0DA /* JLLineChartData.m in Sources */,
 				BF8C82291DF6006C00C9A0DA /* AppDelegate.m in Sources */,
 				BF8C824D1DF6016100C9A0DA /* JLChartPointItem.m in Sources */,
 				BF8C824C1DF6016100C9A0DA /* JLBubble.m in Sources */,
 				BF8C82511DF6016100C9A0DA /* JLSingleLineChart.m in Sources */,
+				BF75C4191E06EE4300CCCD0B /* JLPieChartData.m in Sources */,
 				BF8C82261DF6006C00C9A0DA /* main.m in Sources */,
 				BF8C824E1DF6016100C9A0DA /* JLChartPointSet.m in Sources */,
 				BF8C824B1DF6016100C9A0DA /* JLBaseChart.m in Sources */,
@@ -364,6 +376,7 @@
 				BF8C823A1DF6006C00C9A0DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

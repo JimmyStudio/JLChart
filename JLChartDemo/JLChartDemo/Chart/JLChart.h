@@ -13,3 +13,5 @@
 #import "JLLineChartData.h"
 #import "JLLineChart.h"
 #import "JLSingleLineChart.h"
+#import "JLPieChartData.h"
+#import "JLPieChart.h"

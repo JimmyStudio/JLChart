@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "JLChart.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController ()
 
@@ -19,23 +20,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //仿余额宝收益走势
-    UILabel *desc1 = [[UILabel alloc]initWithFrame:CGRectMake(10, 20, SCREEN_WIDTH-10, 40)];
+    UILabel *desc1 = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, SCREEN_WIDTH-10, 40)];
     desc1.text = @"仿余额宝收益走势(%)";
     [self.view addSubview:desc1];
     //使用比较简单,只支持一条线~~
     [self creatJLSingleLineChart];
     
     //基金走势和沪深300对比,包括自己的买入点...
-    UILabel *desc2 = [[UILabel alloc]initWithFrame:CGRectMake(10, 300, SCREEN_WIDTH-10, 40)];
+    UILabel *desc2 = [[UILabel alloc]initWithFrame:CGRectMake(10, SCREEN_HEIGHT / 3.0f, SCREEN_WIDTH-10, 40)];
     desc2.text = @"基金走势和沪深300对比,包括自己的买入点...";
     [self.view addSubview:desc2];
     //看着有点复杂...不过按自己项目的数据结构来说还是蛮方便的...
     [self creatJLLineChart];
+    
+    UILabel *desc3 = [[UILabel alloc]initWithFrame:CGRectMake(10, SCREEN_HEIGHT *2.0f / 3.0f, SCREEN_WIDTH-10, 40)];
+    desc3.text = @"饼图";
+    [self.view addSubview:desc3];
+    [self creatPieChart];
+
 }
 
 - (void)creatJLSingleLineChart{
     //x坐标轴按数据量显示,建议数据了小一点,7个左右显示效果较佳,未做其他处理.
-    JLSingleLineChart *singleChart = [[JLSingleLineChart alloc]initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, 200)];
+    JLSingleLineChart *singleChart = [[JLSingleLineChart alloc]initWithFrame:CGRectMake(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT / 3.0f - 40)];
     JLLineChartData *data = [[JLLineChartData alloc]init];
     JLChartPointSet *set = [[JLChartPointSet alloc]init];
     for (int i = 0; i< 7; i ++) {
@@ -60,7 +67,7 @@
 }
 
 - (void)creatJLLineChart{
-    JLLineChart *lineChart = [[JLLineChart alloc]initWithFrame:CGRectMake(0, 340, SCREEN_WIDTH, 200)];
+    JLLineChart *lineChart = [[JLLineChart alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT / 3.0f + 40, SCREEN_WIDTH, SCREEN_HEIGHT / 3.0f - 40)];
     
     //data1表示本基金走势 数据随便写的~~
     JLLineChartData *data1 = [[JLLineChartData alloc]init];
@@ -121,6 +128,24 @@
     [self.view addSubview:lineChart];
     
     [lineChart strokeChart];
+}
+
+- (void)creatPieChart{
+    JLPieChart *chart = [[JLPieChart alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT *2.0f/ 3.0f + 40, SCREEN_WIDTH, SCREEN_HEIGHT / 3.0f - 40)];
+    [self.view addSubview:chart];
+    
+    JLChartPointItem *item1 = [JLChartPointItem pointItemWithRawX:@"衣服费" andRowY:@"0.33"];
+    JLChartPointItem *item2 = [JLChartPointItem pointItemWithRawX:@"按摩费" andRowY:@"0.34"];
+    JLChartPointItem *item3 = [JLChartPointItem pointItemWithRawX:@"吃饭费" andRowY:@"0.23"];
+    JLChartPointItem *item4 = [JLChartPointItem pointItemWithRawX:@"其他" andRowY:@"0.1"];
+    JLPieChartData *data  = [[JLPieChartData alloc]init];
+    
+    data.items = @[item1,item2,item3,item4].mutableCopy;
+    data.fillColors = @[[UIColor redColor],[UIColor blueColor],[UIColor cyanColor],[UIColor yellowColor]].mutableCopy;
+    
+    chart.data = data;
+    
+    [chart strokeChart];
 }
 
 - (void)didReceiveMemoryWarning {
