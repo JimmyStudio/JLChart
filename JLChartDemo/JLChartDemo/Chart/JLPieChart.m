@@ -126,8 +126,8 @@
     for (int i = 0; i <data.items.count; i ++) {
         JLChartPointItem *item = data.items[i];
         CGFloat endAngle = startAngle + [item.rawY floatValue] *M_PI *2.0f;
-        
-        if (endAngle >= M_PI *2.0f) {
+        //&& endAngle != _startAngle + M_PI *2.0f 当只有一个数据 占比100%时需特殊处理
+        if (endAngle >= M_PI *2.0f && endAngle != _startAngle + M_PI *2.0f) {
             endAngle = endAngle - M_PI *2.0f;
         }
         
