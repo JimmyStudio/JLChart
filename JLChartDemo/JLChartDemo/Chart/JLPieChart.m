@@ -104,10 +104,12 @@
     for (UILabel *label in _XValueLabels) {
         [label removeFromSuperview];
     }
+    _XValueLabels = @[].mutableCopy;
     
     for (UILabel *label in _YvalueLabels) {
         [label removeFromSuperview];
     }
+    _YvalueLabels = @[].mutableCopy;
 }
 
 - (void)calculatePiePathWithData:(JLPieChartData *)data inCenter:(CGPoint)center{
