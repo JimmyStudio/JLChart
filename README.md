@@ -25,16 +25,7 @@ JLChartPointSet的集合,每个JLLineChartData对应一条线,包括线宽,线�
 ###5 第三种是饼图
 比较简单,就不介绍了
 
-###6 GitHub下载地址:
-####[JLChart](https://github.com/JimmyStudio/JLChart.git "Title")
-####感兴趣来个star呗
-![hhh.gif](http://upload-images.jianshu.io/upload_images/1631676-15ca2eb7e2845614.gif?imageMogr2/auto-orient/strip)
-大概就这样,简单粗暴,有改进再更新咯,有问题问问我咯.虽然我也不一定很懂咯
+###6 [简书联系](http://www.jianshu.com/p/aa6ff584c594)
 
-###7 顺便打个广告,项目叫"来点财",AppStore搜一下咯~
-![hhh.gif](http://upload-images.jianshu.io/upload_images/1631676-15ca2eb7e2845614.gif?imageMogr2/auto-orient/strip)
-
-###8 [简书联系](http://www.jianshu.com/p/aa6ff584c594)
-
-###9 LICENSE
+###7 LICENSE
 MIT
