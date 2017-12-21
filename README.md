@@ -25,7 +25,5 @@ JLChartPointSet的集合,每个JLLineChartData对应一条线,包括线宽,线�
 ### 5 第三种是饼图
 比较简单,就不介绍了
 
-### 6 [简书联系](http://www.jianshu.com/p/aa6ff584c594)
-
-### 7 LICENSE
+### 6 LICENSE
 MIT
